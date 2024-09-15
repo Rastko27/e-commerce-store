@@ -1,0 +1,67 @@
+@import url("./fonts.css");
+@import url("./index.css");
+
+.cart-item {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 15px 10px;
+}
+
+.cart-left {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   gap: 30px;
+}
+
+.cart-item-image {
+   width: 150px;
+   height: 200px;
+   object-fit: cover;
+}
+
+.cart-item-title {
+   font-size: 30px;
+   font-weight: 200;
+   font-family: "Degular";
+}
+
+.cart-right {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   font-size: 25px;
+   font-weight: 200;
+}
+
+.cart-quantity {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   gap: 10px;
+}
+
+.cart-quantity-number {
+   font-weight: 400;
+}
+
+.cart-price {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   gap: 10px;
+}
+
+.cart-price-number {
+   font-weight: 400;
+   text-decoration: underline;
+}
+
+.cart-line {
+   height: 30px;
+   width: 1px;
+   background-color: var(--white);
+   margin: 0px 10px;
+}

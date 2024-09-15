@@ -1,0 +1,144 @@
+/* Degular Fonts */
+@font-face {
+   font-family: 'Degular';
+   src: url('/src/assets/Degular-ThinItalic.otf') format('opentype');
+   font-weight: 100;
+   font-style: italic;
+}
+
+@font-face {
+   font-family: 'Degular';
+   src: url('/src/assets/Degular-Thin.otf') format('opentype');
+   font-weight: 100;
+}
+
+@font-face {
+   font-family: 'Degular';
+   src: url('/src/assets/Degular-SemiboldItalic.otf') format('opentype');
+   font-weight: 600;
+   font-style: italic;
+}
+
+@font-face {
+   font-family: 'Degular';
+   src: url('/src/assets/Degular-Semibold.otf') format('opentype');
+   font-weight: 600;
+}
+
+@font-face {
+   font-family: 'Degular';
+   src: url('/src/assets/Degular-RegularItalic.otf') format('opentype');
+   font-weight: 400;
+   font-style: italic;
+}
+
+@font-face {
+   font-family: 'Degular';
+   src: url('/src/assets/Degular-Regular.otf') format('opentype');
+   font-weight: 400;
+}
+
+@font-face {
+   font-family: 'Degular';
+   src: url('/src/assets/Degular-MediumItalic.otf') format('opentype');
+   font-weight: 500;
+   font-style: italic;
+}
+
+@font-face {
+   font-family: 'Degular';
+   src: url('/src/assets/Degular-Medium.otf') format('opentype');
+   font-weight: 500;
+}
+
+@font-face {
+   font-family: 'Degular';
+   src: url('/src/assets/Degular-LightItalic.otf') format('opentype');
+   font-weight: 300;
+   font-style: italic;
+}
+
+@font-face {
+   font-family: 'Degular';
+   src: url('/src/assets/Degular-Light.otf') format('opentype');
+   font-weight: 300;
+}
+
+@font-face {
+   font-family: 'Degular';
+   src: url('/src/assets/Degular-BoldItalic.otf') format('opentype');
+   font-weight: 700;
+   font-style: italic;
+}
+
+@font-face {
+   font-family: 'Degular';
+   src: url('/src/assets/Degular-Bold.otf') format('opentype');
+   font-weight: 700;
+}
+
+@font-face {
+   font-family: 'Degular';
+   src: url('/src/assets/Degular-BlackItalic.otf') format('opentype');
+   font-weight: 900;
+   font-style: italic;
+}
+
+@font-face {
+   font-family: 'Degular';
+   src: url('/src/assets/Degular-Black.otf') format('opentype');
+   font-weight: 900;
+}
+
+/* NeueMontreal Fonts */
+@font-face {
+   font-family: 'NeueMontreal';
+   src: url('/src/assets/NeueMontreal-Bold.otf') format('opentype');
+   font-weight: 700;
+}
+
+@font-face {
+   font-family: 'NeueMontreal';
+   src: url('/src/assets/NeueMontreal-LightItalic.otf') format('opentype');
+   font-weight: 300;
+   font-style: italic;
+}
+
+@font-face {
+   font-family: 'NeueMontreal';
+   src: url('/src/assets/NeueMontreal-BoldItalic.otf') format('opentype');
+   font-weight: 700;
+   font-style: italic;
+}
+
+@font-face {
+   font-family: 'NeueMontreal';
+   src: url('/src/assets/NeueMontreal-MediumItalic.otf') format('opentype');
+   font-weight: 500;
+   font-style: italic;
+}
+
+@font-face {
+   font-family: 'NeueMontreal';
+   src: url('/src/assets/NeueMontreal-Italic.otf') format('opentype');
+   font-weight: 400;
+   font-style: italic;
+}
+
+@font-face {
+   font-family: 'NeueMontreal';
+   src: url('/src/assets/NeueMontreal-Light.otf') format('opentype');
+   font-weight: 300;
+}
+
+@font-face {
+   font-family: 'NeueMontreal';
+   src: url('/src/assets/NeueMontreal-Medium.otf') format('opentype');
+   font-weight: 500;
+}
+
+@font-face {
+   font-family: 'NeueMontreal';
+   src: url('/src/assets/NeueMontreal-Regular.otf') format('opentype');
+   font-weight: 400;
+}

@@ -1,0 +1,39 @@
+@import url("./fonts.css");
+@import url("./index.css");
+
+.nav {
+   position: fixed;
+   top: 0;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 15px 30px;
+   border-bottom: 1px solid var(--white);
+   background-color: var(--black);
+   z-index: 3;
+}
+
+h1 {
+   font-size: 33px;
+   font-weight: 500;
+   letter-spacing: 0;
+   line-height: 1;
+}
+
+.cart-button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 15px;
+}
+
+.cart-image {
+   aspect-ratio: 1 / 1;
+}
+
+.cart-number {
+   font-size: 24px;
+   padding-top: 3px;
+   font-family: "Degular";
+   font-weight: 300;
+}

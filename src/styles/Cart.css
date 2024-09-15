@@ -1,0 +1,20 @@
+@import url("./fonts.css");
+
+.cart-page {
+   width: 100%;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   padding: 80px 30px 70px 30px;
+}
+
+.cart-hero-wrapper {
+   margin-top: 50px;
+   padding: 0px 30px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: stretch;
+}
