@@ -73,3 +73,26 @@
    background-color: var(--white);
    color: var(--black);
 }
+
+@media screen and (max-width: 450px) {
+   .cart-list {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: stretch;
+   }
+
+   .cart-total {
+      margin-top: 30px;
+      height: fit-content;
+      padding-bottom: 70px;
+   }
+   
+   .checkout {
+      height: 55px;
+      left: 10px;
+      bottom: 0;
+   }
+}

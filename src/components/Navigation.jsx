@@ -10,7 +10,7 @@ const Navigation = () => {
    
    return (
       <div className="container nav">
-         <Link to={"/"}><h1>E-commerce Shop</h1></Link>
+         <Link to={"/"}><h1 className="nav-heading">E-commerce Shop</h1></Link>
          <Link to={"/cart"} className="cart-button">
             <ShoppingCart className="cart-image" strokeWidth={1.5} size={32} />
             <div className="cart-number">{cartSize}</div>

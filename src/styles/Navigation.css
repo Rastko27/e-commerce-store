@@ -13,7 +13,7 @@
    z-index: 3;
 }
 
-h1 {
+.nav-heading {
    font-size: 33px;
    font-weight: 500;
    letter-spacing: 0;
@@ -36,4 +36,14 @@ h1 {
    padding-top: 3px;
    font-family: "Degular";
    font-weight: 300;
+}
+
+@media screen and (max-width: 425px) {
+   .nav {
+      height: 80px;
+   }
+
+   .nav-heading {
+      font-size: 27px;
+   }
 }

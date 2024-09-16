@@ -92,3 +92,16 @@ h3 {
    background-color: var(--white);
    color: var(--black);
 }
+
+@media screen and (max-width: 450px) {
+   .item-list {
+      row-gap: 40px;
+      grid-template-columns: repeat(auto-fit, 100%);
+      grid-auto-rows: auto;
+      padding: 0px 10px;
+   }
+
+   .item {
+      width: 100%;
+   }
+}
