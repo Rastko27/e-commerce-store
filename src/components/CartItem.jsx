@@ -3,11 +3,12 @@ import "../styles/CartItem.css";
 import PropTypes from "prop-types";
 import { useContext, useState } from "react";
 import { CartContext } from "./CartContext";
+import { CircleX } from "lucide-react"
 
 const CartItem = ({ cartItem }) => {
    const [quantityInput, setQuantityInput] = useState(cartItem.quantity);
 
-   const { updateQuantity } = useContext(CartContext);
+   const { updateQuantity, removeFromCart } = useContext(CartContext);
 
    const truncateTitle = (description, wordLimit) => {
       const words = description.split(" ");
@@ -52,6 +53,12 @@ const CartItem = ({ cartItem }) => {
                   ${cartItem.price * cartItem.quantity}
                </span>
             </div>
+            <CircleX
+               size={"33px"}
+               strokeWidth={"1.5px"}
+               className="circle-x"
+               onClick={() => {removeFromCart(cartItem)}}
+            />
          </div>
       </div>
    );
