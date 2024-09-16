@@ -1,14 +1,26 @@
 import "../styles/index.css";
 import "../styles/CartItem.css";
 import PropTypes from "prop-types";
+import { useContext, useState } from "react";
+import { CartContext } from "./CartContext";
 
 const CartItem = ({ cartItem }) => {
+   const [quantityInput, setQuantityInput] = useState(cartItem.quantity);
+
+   const { updateQuantity } = useContext(CartContext);
+
    const truncateTitle = (description, wordLimit) => {
       const words = description.split(" ");
       if (words.length <= wordLimit) {
          return description;
       }
       return words.slice(0, wordLimit).join(" ");
+   };
+
+   const handleQuantityChange = (event) => {
+      const newQuantity = parseInt(event.target.value, 10) || 0;
+      setQuantityInput(newQuantity);
+      updateQuantity(cartItem.id, newQuantity); // Pass id and new quantity to parent handler
    };
 
    return (
@@ -26,7 +38,12 @@ const CartItem = ({ cartItem }) => {
          <div className="cart-right">
             <div className="cart-quantity">
                Qty:
-               <span className="cart-quantity-number">{cartItem.quantity}</span>
+               <input
+                  type="number"
+                  value={quantityInput}
+                  onChange={(event) => handleQuantityChange(event)}
+                  min={1}
+               />
             </div>
             <div className="cart-line"></div>
             <div className="cart-price">
@@ -42,7 +59,6 @@ const CartItem = ({ cartItem }) => {
 
 CartItem.propTypes = {
    cartItem: PropTypes.object,
-   cartPrice: PropTypes.number
 };
 
 export default CartItem;

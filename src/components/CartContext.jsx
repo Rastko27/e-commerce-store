@@ -42,9 +42,19 @@ const CartProvider = ({ children }) => {
       return cart.reduce((total, item) => total + item.quantity, 0);
    }, [cart]);
 
+   const updateQuantity = (id, newQuantity) => {
+      setCart((prevCart) =>
+         prevCart.map((cartItem) =>
+            cartItem.id === id
+               ? { ...cartItem, quantity: newQuantity }
+               : cartItem
+         )
+      );
+   };
+
    return (
       <CartContext.Provider
-         value={{ cart, addToCart, removeFromCart, isInCart, cartSize }}
+         value={{ cart, addToCart, removeFromCart, isInCart, cartSize, updateQuantity }}
       >
          {children}
       </CartContext.Provider>
